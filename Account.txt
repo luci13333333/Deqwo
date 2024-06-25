@@ -1,0 +1,14 @@
+{
+    "user1": {
+        "username": "user1",
+        "email": "example@example.com",
+        "phone": "+1234567890",
+        "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    "Deqwo": {
+        "username": "Deqwo",
+        "email": "yakubenko.200593@mail.ru",
+        "phone": "+79092434445",
+        "password": "587b52a7810631eba2f7cb50e873f3ae85d596f8a46ae296b53addc90fc9af96"
+    }
+}
