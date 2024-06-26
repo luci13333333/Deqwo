@@ -5,11 +5,13 @@ target_currency = input("Введите код целевой валюты: ")
 
 amount = float(input("Введите сумму первичной валюты: "))
 
-url = f"https://v6.exchangerate-api.com/v6/01f5596ca1a5b5081ae31e99/latest/{base_currency}"
+# Open Exchange Rates API endpoint
+url = f"https://openexchangerates.org/api/latest.json?app_id=fa957ce08d4c47cfb1bd377982db3231"
 response = requests.get(url)
 
 if response.status_code == 200:
-    exchange_rates = response.json()["conversion_rates"]
+    # Accessing the exchange rates from the response
+    exchange_rates = response.json()["rates"]
     if target_currency in exchange_rates:
         target_rate = exchange_rates[target_currency]
         converted_amount = amount * target_rate
